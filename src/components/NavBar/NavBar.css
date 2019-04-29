@@ -1,0 +1,25 @@
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  /* These take the element out of the flow, but make it visible */
+  height: 0;
+  overflow: visible;
+
+  /* Both position and top are required for stickiness */
+  position: sticky;
+  top: 0;
+
+  /* Set initial opacity and transition speed */
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.nav-bar.hide {
+  opacity: 0;
+}
