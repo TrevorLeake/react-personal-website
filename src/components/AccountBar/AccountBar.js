@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import AccountButton from '../AccountButton/AccountButton';
 import './AccountBar.css';
 
+// Load all the logos in both white and colored form.
 import shadertoyLogoWhite from '../../static/logos/shadertoy-logo-white.png';
 import githubLogoWhite from '../../static/logos/github-logo-white.png';
 import itchioLogoWhite from '../../static/logos/itchio-logo-white.png';
@@ -9,6 +10,7 @@ import twitterLogoWhite from '../../static/logos/twitter-logo-white.png';
 import soundcloudLogoWhite from '../../static/logos/soundcloud-logo-white.png';
 import instagramLogoWhite from '../../static/logos/instagram-logo-white.png';
 import bitbucketLogoWhite from '../../static/logos/bitbucket-logo-white.png';
+import stackExchangeLogoWhite from '../../static/logos/stack-exchange-logo-white.png';
 
 import shadertoyLogoColored from '../../static/logos/shadertoy-logo-colored.png';
 import githubLogoColored from '../../static/logos/github-logo-colored.png';
@@ -17,7 +19,7 @@ import twitterLogoColored from '../../static/logos/twitter-logo-colored.png';
 import soundcloudLogoColored from '../../static/logos/soundcloud-logo-colored.png';
 import instagramLogoColored from '../../static/logos/instagram-logo-colored.png';
 import bitbucketLogoColored from '../../static/logos/bitbucket-logo-colored.png';
-
+import stackExchangeLogoColored from '../../static/logos/stack-exchange-logo-colored.png';
 
 
 class AccountBar extends Component {
@@ -31,6 +33,7 @@ class AccountBar extends Component {
         <AccountButton name="Soundcloud" imageWhite={soundcloudLogoWhite} imageColored={soundcloudLogoColored} url="https://www.soundcloud.com/"/>
         <AccountButton name="Instagram" imageWhite={instagramLogoWhite} imageColored={instagramLogoColored} url="https://www.instagram.com/"/>
         <AccountButton name="Bitbucket" imageWhite={bitbucketLogoWhite} imageColored={bitbucketLogoColored} url="https://www.bitbucket.com/"/>
+        <AccountButton name="StackExchange" imageWhite={stackExchangeLogoWhite} imageColored={stackExchangeLogoColored} url="https://www.stackexchange.com/"/>
       </div>
     );
   }
