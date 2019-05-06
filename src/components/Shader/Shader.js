@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './Shader.css';
 
 class Shader extends Component {
   render() {
@@ -25,7 +26,7 @@ class Shader extends Component {
         id={this.props.name || this.shaderId}
         src={url}
         title="Shader"
-        frameborder="0"
+        frameBorder="0"
       />
     )
   }

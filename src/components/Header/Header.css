@@ -1,14 +1,21 @@
 
 .header {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  background-color: teal;
 
+  /* Center the contents */
+  text-align: center;
+
+  /* Position & size the element */
+  grid-column-start: page-left;
+  grid-column-end: page-right;
+  grid-row-start: page-top;
+  grid-row-end: center-track-top;
+
+  /* Get out of the way of the NavBar */
   padding-top: 100px;
-  width: 100%;
-  min-height: 20vh;
+
 }
 
 #body-image {
-  height: 50vh;
+  height: 85%;
 }

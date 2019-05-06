@@ -1,8 +1,11 @@
 
 .nav-bar {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  /* Position the NavBar (though it will snap to top no matter what) */
+  grid-row: page-top;
+  grid-column: center-track-left;
+
+  /* Center the NavLinks */
+  text-align: center;
 
   /* These take the element out of the flow, but make it visible */
   height: 0;
@@ -20,6 +23,7 @@
   transition: 0.2s;
 }
 
+/* Hidden state of bar */
 .nav-bar.hide {
   opacity: 0;
 }

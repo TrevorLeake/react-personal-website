@@ -1,14 +1,11 @@
 .app {
-  background-color: rgb(10, 50, 50);
+  background-color: rgb(30, 150, 30);
+
+  display: grid;
+  grid-template-columns: [page-left] 100px [center-track-left] auto [center-track-right] 100px [page-right];
+  grid-template-rows: [page-top] 70vh [center-track-top] auto [center-track-bottom] 100px [page-bottom];
+
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-#logo {
-  height: 15vh;
 }

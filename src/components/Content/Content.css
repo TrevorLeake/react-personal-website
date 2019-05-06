@@ -1,4 +1,30 @@
 
 .content {
-  min-height: 100vh;
+  background-color: rgb(220,20,20,1);
+
+  /* Position & size the element */
+  grid-column-start: center-track-left;
+  grid-column-end: center-track-right;
+  grid-row-start: center-track-top;
+  grid-row-end: center-track-bottom;
+
+  padding-left: 50px;
+  padding-right: 50px;
+
+  /* Center contents */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+#shader-display {
+  background-color: rgb(20,120,200);
+
+  /* Center shaders within the display area */
+  display: flex;
 }

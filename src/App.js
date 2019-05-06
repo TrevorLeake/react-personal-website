@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="app">
-      <NavBar />
+      <NavBar /> {/* NavBar is always out of CSS flow */}
       <Header />
       <Content />
       <Footer />
