@@ -1,6 +1,13 @@
 import React, {Component} from 'react';
 import Clock from '../Clock/Clock';
+import Shader from '../Shader/Shader';
 import './Content.css';
+
+const shaderMap = {
+  "cars": "wlX3zr"
+}
+
+
 
 const List = (props) => {
   return (
@@ -21,6 +28,8 @@ class Content extends Component {
       <div className="content">
         Content
         <br/>
+        <Shader shaderId={shaderMap["cars"]} paused={true} startTime={1}/>
+        <br/>
         <br/>
         Stateful Clock
         <Clock />
@@ -29,6 +38,9 @@ class Content extends Component {
         List of Ways to Laugh
         <br/>
         <List items={items} />
+        <br/>
+        <br/>
+        I like to be creative, especially with science
       </div>
     );
   }
