@@ -27,4 +27,5 @@ p {
 
   /* Center shaders within the display area */
   display: flex;
+  justify-content: center;
 }

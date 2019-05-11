@@ -1,7 +1,0 @@
-
-/* Style for all descendants of account-button class tags */
-.account-button * {
-  margin-left: 5px;
-  margin-right: 5px;
-  max-height: 7vh;
-}

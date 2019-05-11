@@ -2,5 +2,5 @@
 .shader {
   height: 30%;
   width: 30%;
-  margin: 10px;
+  margin: calc(3% / 2);
 }

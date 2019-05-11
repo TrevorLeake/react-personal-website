@@ -1,39 +1,77 @@
 import React, {Component} from 'react';
-import AccountButton from '../AccountButton/AccountButton';
 import './AccountBar.css';
 
-// Load all the logos in both white and colored form.
-import shadertoyLogoWhite from '../../static/logos/shadertoy-logo-white.png';
-import githubLogoWhite from '../../static/logos/github-logo-white.png';
-import itchioLogoWhite from '../../static/logos/itchio-logo-white.png';
-import twitterLogoWhite from '../../static/logos/twitter-logo-white.png';
-import soundcloudLogoWhite from '../../static/logos/soundcloud-logo-white.png';
-import instagramLogoWhite from '../../static/logos/instagram-logo-white.png';
-import bitbucketLogoWhite from '../../static/logos/bitbucket-logo-white.png';
-import stackExchangeLogoWhite from '../../static/logos/stack-exchange-logo-white.png';
-
-import shadertoyLogoColored from '../../static/logos/shadertoy-logo-colored.png';
-import githubLogoColored from '../../static/logos/github-logo-colored.png';
-import itchioLogoColored from '../../static/logos/itchio-logo-colored.png';
-import twitterLogoColored from '../../static/logos/twitter-logo-colored.png';
-import soundcloudLogoColored from '../../static/logos/soundcloud-logo-colored.png';
-import instagramLogoColored from '../../static/logos/instagram-logo-colored.png';
-import bitbucketLogoColored from '../../static/logos/bitbucket-logo-colored.png';
-import stackExchangeLogoColored from '../../static/logos/stack-exchange-logo-colored.png';
-
+import { ReactComponent as Github } from '../../static/logos/github.svg'
+import { ReactComponent as Bitbucket } from '../../static/logos/bitbucket.svg'
+import { ReactComponent as Instagram } from '../../static/logos/instagram.svg'
+import { ReactComponent as Medium } from '../../static/logos/medium.svg'
+import { ReactComponent as ItchIO } from '../../static/logos/itchio.svg'
+import { ReactComponent as LinkedIn } from '../../static/logos/linkedin.svg'
+import { ReactComponent as Soundcloud } from '../../static/logos/soundcloud.svg'
+import { ReactComponent as Twitter } from '../../static/logos/twitter.svg'
+import { ReactComponent as StackExchange } from '../../static/logos/stack-exchange.svg'
 
 class AccountBar extends Component {
   render() {
+    const onColor = "#ffffff"
+    const offColor = "#000000"
+    const width = "auto"
+    const height = "40px"
+
+    let colorOn = e => {e.setAttribute('fill', onColor)}
+    let colorOff = e => {e.setAttribute('fill', offColor)}
+    function deepMap(element, colorFunction) {
+      // Iterate through the children of the given element
+      let children = element.children;
+      for(let i=0; i<children.length; ++i)
+        deepMap(children[i], colorFunction);
+
+      // If fill exists, set fill
+      let fill = element.getAttribute('fill');
+      if(fill !== null && fill !== 'none')
+        colorFunction(element);
+    }
+
+
+
     return (
       <div className="account-bar">
-        <AccountButton name="Shadertoy" imageWhite={shadertoyLogoWhite} imageColored={shadertoyLogoColored} url="https://www.shadertoy.com/"/>
-        <AccountButton name="Github" imageWhite={githubLogoWhite} imageColored={githubLogoColored} url="https://www.github.com/"/>
-        <AccountButton name="Itch.io" imageWhite={itchioLogoWhite} imageColored={itchioLogoColored} url="https://itch.io/"/>
-        <AccountButton name="Twitter" imageWhite={twitterLogoWhite} imageColored={twitterLogoColored} url="https://www.twitter.com/"/>
-        <AccountButton name="Soundcloud" imageWhite={soundcloudLogoWhite} imageColored={soundcloudLogoColored} url="https://www.soundcloud.com/"/>
-        <AccountButton name="Instagram" imageWhite={instagramLogoWhite} imageColored={instagramLogoColored} url="https://www.instagram.com/"/>
-        <AccountButton name="Bitbucket" imageWhite={bitbucketLogoWhite} imageColored={bitbucketLogoColored} url="https://www.bitbucket.com/"/>
-        <AccountButton name="StackExchange" imageWhite={stackExchangeLogoWhite} imageColored={stackExchangeLogoColored} url="https://www.stackexchange.com/"/>
+
+        <a href="https://www.github.com/trevorleake">
+          <Github width={width} height={height} onMouseEnter={e => deepMap(e.currentTarget, colorOn)} onMouseLeave={e => deepMap(e.currentTarget, colorOff)} />
+        </a>
+
+        <a href="https://www.bitbucket.com/trevorleake">
+          <Bitbucket width={width} height={height} onMouseEnter={e => deepMap(e.currentTarget, colorOn)} onMouseLeave={e => deepMap(e.currentTarget, colorOff)} />
+        </a>
+
+        <a href="https://www.instagram.com/trevorleake">
+          <Instagram width={width} height={height} onMouseEnter={e => deepMap(e.currentTarget, colorOn)} onMouseLeave={e => deepMap(e.currentTarget, colorOff)} />
+        </a>
+
+        <a href="https://www.medium.com">
+          <Medium width={width} height={height} onMouseEnter={e => deepMap(e.currentTarget, colorOn)} onMouseLeave={e => deepMap(e.currentTarget, colorOff)} />
+        </a>
+
+        <a href="https://www.itchio.com">
+          <ItchIO width={width} height={height} onMouseEnter={e => deepMap(e.currentTarget, colorOn)} onMouseLeave={e => deepMap(e.currentTarget, colorOff)} />
+        </a>
+
+        <a href="https://www.linkedin.com">
+          <LinkedIn width={width} height={height} onMouseEnter={e => deepMap(e.currentTarget, colorOn)} onMouseLeave={e => deepMap(e.currentTarget, colorOff)} />
+        </a>
+
+        <a href="https://www.soundcloud.com">
+          <Soundcloud width={width} height={height} onMouseEnter={e => deepMap(e.currentTarget, colorOn)} onMouseLeave={e => deepMap(e.currentTarget, colorOff)} />
+        </a>
+
+        <a href="https://www.stackexchange.com">
+          <StackExchange width={width} height={height} onMouseEnter={e => deepMap(e.currentTarget, colorOn)} onMouseLeave={e => deepMap(e.currentTarget, colorOff)} />
+        </a>
+
+        <a href="https://www.twitter.com/trevorleake">
+          <Twitter width={width} height={height} onMouseEnter={e => deepMap(e.currentTarget, colorOn)} onMouseLeave={e => deepMap(e.currentTarget, colorOff)} />
+        </a>
       </div>
     );
   }
