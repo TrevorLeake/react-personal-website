@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Clock from '../Clock/Clock';
 import Shader from '../Shader/Shader';
+import ModeSelector from '../ModeSelector/ModeSelector';
 import './Content.css';
 
 // Map shader names to their API's identifiers
@@ -16,6 +16,8 @@ class Content extends Component {
 
     return (
       <div className="content">
+        {/*<ModeSelector />*/}
+
         <div id="shader-display">
           <Shader shaderId={shaderMap["cars"]} paused={true} startTime={1}/>
           <Shader shaderId={shaderMap["moving-dots"]} paused={true} startTime={1}/>

@@ -1,11 +1,11 @@
 .app {
-  background-color: rgb(30, 150, 30);
+  background-color: rgb(30, 90, 100);
 
   display: grid;
   grid-template-columns: [page-left] 100px [center-track-left] auto [center-track-right] 100px [page-right];
-  grid-template-rows: [page-top] 70vh [center-track-top] auto [center-track-bottom] 100px [page-bottom];
+  grid-template-rows: [page-top] calc(70vh + 100px) [center-track-top] auto [center-track-bottom] 100px [page-bottom];
 
   min-height: 100vh;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(20px + 1vh);
   color: white;
 }

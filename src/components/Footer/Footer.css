@@ -1,7 +1,5 @@
 
 .footer {
-  background-color: rgb(250,140,150);
-
   /* Position & size the element */
   grid-column-start: page-left;
   grid-column-end: page-right;

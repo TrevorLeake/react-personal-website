@@ -1,7 +1,5 @@
 
 .header {
-  background-color: teal;
-
   /* Center the contents */
   text-align: center;
 
@@ -12,8 +10,7 @@
   grid-row-end: center-track-top;
 
   /* Get out of the way of the NavBar */
-  padding-top: 100px;
-
+  padding-top: calc(20px + 20px + 1vh);
 }
 
 #body-image {

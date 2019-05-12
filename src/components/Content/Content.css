@@ -1,7 +1,5 @@
 
 .content {
-  background-color: rgb(220,20,20,1);
-
   /* Position & size the element */
   grid-column-start: center-track-left;
   grid-column-end: center-track-right;

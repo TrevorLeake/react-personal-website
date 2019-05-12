@@ -4,9 +4,14 @@
   justify-content: space-between;
   margin-left: 25%;
   margin-right: 25%;
+  height: 40px;
 }
 
-.account-bar * {
-  margin-left: 5px;
-  margin-right: 5px;
+.account-logo {
+  /* Set initial opacity and transition speed */
+  opacity: 1;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
 }
