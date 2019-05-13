@@ -15,4 +15,5 @@
 
 #body-image {
   height: 85%;
+  min-height:400px;
 }

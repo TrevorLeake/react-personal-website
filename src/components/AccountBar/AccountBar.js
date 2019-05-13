@@ -4,7 +4,6 @@ import './AccountBar.css';
 
 // Import our SVG logos
 import { ReactComponent as Github } from '../../static/logos/github.svg'
-import { ReactComponent as Bitbucket } from '../../static/logos/bitbucket.svg'
 import { ReactComponent as Instagram } from '../../static/logos/instagram.svg'
 import { ReactComponent as Medium } from '../../static/logos/medium.svg'
 import { ReactComponent as ItchIO } from '../../static/logos/itchio.svg'
@@ -16,7 +15,6 @@ import { ReactComponent as Kaggle } from '../../static/logos/kaggle.svg'
 
 const nameToSVG = {
   "Github":         Github,
-  "Bitbucket":      Bitbucket,
   "Instagram":      Instagram,
   "Medium":         Medium,
   "ItchIO":         ItchIO,
@@ -32,7 +30,6 @@ const nameToSVG = {
 
 const nameToLink = {
   "Github": "https://www.github.com/trevorleake",
-  "Bitbucket": "https://www.bitbucket.com/trevorleake",
   "Instagram": "https://www.instagram.com/trevorjohnleake",
   "Medium": "https://medium.com/@trevorjohnleake",
   "ItchIO": "https://trevorleake.itch.io/",
@@ -85,19 +82,14 @@ class AccountBar extends Component {
     let logos = [
       "Twitter",
       "Instagram",
-      "SoundCloud"
-    ]
-    let machineLearning = [
       "Kaggle",
       "Github",
-      "Bitbucket",
       "StackExchange",
-      "LinkedIn"
+      "LinkedIn",
+    ]
+    let machineLearning = [
     ]
     let gameDev = [
-      "Github",
-      "ItchIO",
-      "StackExchange"
     ]
 
     if(theme.machineLearning)   uniqueAdd(logos, machineLearning)

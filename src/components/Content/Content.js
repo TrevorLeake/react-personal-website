@@ -18,22 +18,16 @@ class Content extends Component {
       <div className="content">
         {/*<ModeSelector />*/}
 
+        {/*
         <div id="shader-display">
           <Shader shaderId={shaderMap["cars"]} paused={true} startTime={1}/>
           <Shader shaderId={shaderMap["moving-dots"]} paused={true} startTime={1}/>
           <Shader shaderId={shaderMap["paintbrush"]} paused={true} startTime={1}/>
         </div>
-
-        <br/>
-
-        <p>
-          I do machine learning, mechanical engineering, and math. In my
-          off time I also make video games, music, and sometimes go outside.
-        </p>
+        */}
 
         <p>
-          I like to be creative, especially with science. I'm easily entertained
-          so I wind up enthralled by anything remotely interesting.
+          I like to be creative, especially with science -- AI, music, and mechanical engineering are my jams.
         </p>
       </div>
     );

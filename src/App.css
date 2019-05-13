@@ -1,8 +1,8 @@
 .app {
-  background-color: rgb(30, 90, 100);
+  background-color: rgb(200, 0, 100);
 
   display: grid;
-  grid-template-columns: [page-left] 100px [center-track-left] auto [center-track-right] 100px [page-right];
+  grid-template-columns: [page-left] 20vw [center-track-left] auto [center-track-right] 20vw [page-right];
   grid-template-rows: [page-top] calc(70vh + 100px) [center-track-top] auto [center-track-bottom] 100px [page-bottom];
 
   min-height: 100vh;
