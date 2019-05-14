@@ -15,12 +15,12 @@ class NavBar extends Component {
     // Note if we're past the fade position
     let fadePosition = 100;
     let isHidden = window.pageYOffset > fadePosition;
+    let pathToResume = process.env.PUBLIC_URL + '/Resume -- Trevor Leake.pdf';
 
     return (
       // If we should hide, hide. CSS takes care of the fading.
       <div className={isHidden ? "nav-bar hide" : "nav-bar"}>
-        <NavLink name="Contact" url="" />
-        <NavLink name="Resume" target="_blank" url="/resume.pdf" />
+        <NavLink name="Resume" target="_blank" url={pathToResume} />
       </div>
     );
   }

@@ -46,7 +46,7 @@ class AccountBar extends Component {
 
   render() {
     const theme = this.context.theme
-    const onColor = "#0fb"
+    const onColor = "#4fb"
     const offColor = "#fff"
     const width = "auto"
     const height = "40px"

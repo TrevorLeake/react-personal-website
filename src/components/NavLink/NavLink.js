@@ -8,7 +8,7 @@ class NavLink extends Component {
 
     return (
       // If we should hide, hide. CSS takes care of the fading.
-      <a className="nav-link" href={url}>
+      <a className="nav-link" href={url} id={name}>
         {name}
       </a>
     );
