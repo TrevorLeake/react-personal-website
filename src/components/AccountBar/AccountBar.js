@@ -12,6 +12,7 @@ import { ReactComponent as SoundCloud } from '../../static/logos/soundcloud.svg'
 import { ReactComponent as Twitter } from '../../static/logos/twitter.svg'
 import { ReactComponent as StackExchange } from '../../static/logos/stack-exchange.svg'
 import { ReactComponent as Kaggle } from '../../static/logos/kaggle.svg'
+import { ReactComponent as Shadertoy } from '../../static/logos/shadertoy.svg'
 
 const nameToSVG = {
   "Github":         Github,
@@ -23,8 +24,8 @@ const nameToSVG = {
   "StackExchange":  StackExchange,
   "Twitter":        Twitter,
   "Kaggle":         Kaggle,
+  "Shadertoy":      Shadertoy,
 
-  "Shadertoy":      null,
   "CodePen":        null
 }
 
@@ -37,7 +38,8 @@ const nameToLink = {
   "SoundCloud": "https://www.soundcloud.com/trevor_leake",
   "StackExchange": "https://stackexchange.com/users/8644667/qfwfq",
   "Twitter": "https://www.twitter.com/trevorleake",
-  "Kaggle": "https://www.kaggle.com/trevorleake"
+  "Kaggle": "https://www.kaggle.com/trevorleake",
+  "Shadertoy": "https://www.shadertoy.com/user/trevorleake"
 }
 
 
@@ -86,6 +88,7 @@ class AccountBar extends Component {
       "Github",
       "StackExchange",
       "LinkedIn",
+      "Shadertoy"
     ]
     let machineLearning = [
     ]

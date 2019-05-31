@@ -6,22 +6,44 @@
   grid-row-start: center-track-top;
   grid-row-end: center-track-bottom;
 
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 
   /* Center contents */
   display: flex;
   flex-direction: column;
 }
 
+.text-block {
+  margin-bottom: 1em;
+}
+
+.text-block * {
+  margin-top: ;
+  margin-bottom: 0;
+}
+
+
+
 p {
   margin-left: auto;
   margin-right: auto;
-  max-width: 500px;
   min-width: 200px;
   font-size: 20px;
   font-weight: lighter;
 }
+
+a {
+  font-weight: normal;
+  text-decoration: none;
+  color: inherit;
+}
+
+h2, h5 {
+  font-weight: lighter;
+}
+
 
 #shader-display {
   /* Center shaders within the display area */

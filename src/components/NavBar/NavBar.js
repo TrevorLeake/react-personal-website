@@ -21,6 +21,7 @@ class NavBar extends Component {
       // If we should hide, hide. CSS takes care of the fading.
       <div className={isHidden ? "nav-bar hide" : "nav-bar"}>
         <NavLink name="Resume" target="_blank" url={pathToResume} />
+        <NavLink name="Works" url="#works" />
       </div>
     );
   }
