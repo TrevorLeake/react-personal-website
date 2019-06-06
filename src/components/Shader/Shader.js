@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './Shader.css';
 
 class Shader extends Component {
-  render() {
+  render(props) {
     // Record all options as given, or their default value
     const targetURL = "https://www.shadertoy.com/embed/";
     const shaderId = this.props.shaderId;
@@ -10,6 +10,7 @@ class Shader extends Component {
     const paused = this.props.paused || false;
     const muted = this.props.muted || true;
     const gui = this.props.gui || false;
+    const classes = this.props.class;
 
     // Create the URL by hand like a crazy person
     const url = targetURL.concat(
@@ -22,7 +23,7 @@ class Shader extends Component {
 
     return (
       <iframe
-        className="shader"
+        className={"shader " + classes}
         id={this.props.name || this.shaderId}
         src={url}
         title="Shader"

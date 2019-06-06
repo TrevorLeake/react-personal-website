@@ -15,6 +15,12 @@
   flex-direction: column;
 }
 
+.subtitle {
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
 .text-block {
   margin-bottom: 1em;
 }
@@ -24,6 +30,10 @@
   margin-bottom: 0;
 }
 
+#dividing-line {
+  border-top: 1px solid #eee;
+  width: 100%;
+}
 
 
 p {
@@ -45,7 +55,7 @@ h2, h5 {
 }
 
 
-#shader-display {
+#shader-display-group {
   /* Center shaders within the display area */
   display: flex;
   justify-content: center;
