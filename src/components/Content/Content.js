@@ -16,6 +16,7 @@ class Content extends Component {
   render() {
 
     return (
+      <div id="content-container">
       <div className="content">
         {/*<ModeSelector />*/}
         <h5>
@@ -69,7 +70,6 @@ class Content extends Component {
         </div>
 
         <div id="dividing-line" />
-
         <div className="text-block">
           <p>
             I'm also involved in a honeypot security project, play jazz around
@@ -77,6 +77,7 @@ class Content extends Component {
             to make this into a feed from sites I'm active on. But, not yet. :)
           </p>
         </div>
+      </div>
       </div>
     );
   }

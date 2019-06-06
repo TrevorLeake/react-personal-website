@@ -1,4 +1,11 @@
 
+#content-container {
+  /* Position & size the element */
+  grid-column-start: page-left;
+  grid-column-end: page-right;
+  background-color: inherit;
+}
+
 .content {
   /* Position & size the element */
   grid-column-start: center-track-left;
