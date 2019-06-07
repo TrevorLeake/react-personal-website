@@ -1,8 +1,0 @@
-
-.footer {
-  /* Position & size the element */
-  grid-column-start: page-left;
-  grid-column-end: page-right;
-  grid-row-start: center-track-bottom;
-  grid-row-end: page-bottom;
-}
