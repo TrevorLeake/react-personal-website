@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Shader from '../Shader/Shader';
-import ModeSelector from '../ModeSelector/ModeSelector';
+// import ModeSelector from '../ModeSelector/ModeSelector';
 import './Content.css';
 
 // Map shader names to their API's identifiers
