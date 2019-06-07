@@ -5,5 +5,5 @@ cache:
   directories:
     - node_modules
 script:
-  - npm test
-  - npm deploy
+  - npm run predeploy
+  - npm run deploy
