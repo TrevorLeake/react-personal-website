@@ -1,3 +1,4 @@
+/*
 import React, {Component} from 'react';
 import {Context} from '../../Context';
 
@@ -33,3 +34,4 @@ class ModeSelector extends Component {
 }
 
 export default ModeSelector;
+*/
