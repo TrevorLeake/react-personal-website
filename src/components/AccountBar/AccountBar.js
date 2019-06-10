@@ -106,7 +106,7 @@ class AccountBar extends Component {
 
             return (
               /* The link surrounds the SVG element */
-              <a href={nameToLink[siteName]} title={siteName}>
+              <a href={nameToLink[siteName]} title={siteName} key={siteName}>
                 <TagName
                   className="account-logo"
                   width={width}

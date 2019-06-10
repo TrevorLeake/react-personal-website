@@ -31,7 +31,7 @@ class Content extends Component {
 
         <div className="text-block">
           <h2> Shaders </h2>
-          <div class="subtitle">Click each to see them move</div>
+          <div className="subtitle">Click each to see them move</div>
 
           <br/>
           <p>
