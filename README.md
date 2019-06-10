@@ -2,6 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Personal React Site
 ![Build badge](https://travis-ci.org/TrevorLeake/react-personal-website.svg?branch=master)
+
 A simple personal site which hosts information about my work & training.
 
 ## Available Scripts
