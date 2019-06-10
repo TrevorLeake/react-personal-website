@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Personal React Site
+![Build badge](https://travis-ci.org/TrevorLeake/react-personal-website.svg?branch=master)
+A simple personal site which hosts information about my work & training.
+
 ## Available Scripts
 
 In the project directory, you can run:
