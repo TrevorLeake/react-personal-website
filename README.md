@@ -1,7 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Personal React Site
-![Build badge](https://travis-ci.org/TrevorLeake/react-personal-website.svg?branch=master)
+
+Build ![Build badge](https://travis-ci.org/TrevorLeake/react-personal-website.svg?branch=master)
+
+Coverage [![codecov](https://codecov.io/gh/TrevorLeake/react-personal-website/branch/master/graph/badge.svg)](https://codecov.io/gh/TrevorLeake/react-personal-website)
+
+
 
 A simple personal site which hosts information about my work & training.
 
