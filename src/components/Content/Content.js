@@ -42,19 +42,20 @@ class Content extends Component {
           </p>
           <br/>
 
-          <div id="shader-display-group">
-            <Shader shaderId={shaderMap["cars"]} paused={true} startTime={1}/>
+          <div id="shader-display-solo">
             <Shader shaderId={shaderMap["moving-dots"]} paused={true} startTime={1}/>
+          </div>
+
+          <div id="shader-display-solo">
             <Shader shaderId={shaderMap["paintbrush"]} paused={true} startTime={1}/>
           </div>
 
-          <br/>
           <p>
           For simple shaders like the ones I've written here, a mathematical
           model seems reasonable. For more interesting shaders (like the one
           below which I've titled "Egg Sac"), a math model seems kinda
-          ridiculous. Modelling a scene like this is fun, creative way to test
-          out skills in CS optimization & in math.
+          ridiculous. Modelling a scene like this is a fun, creative way to test
+          out skills in CS optimization and in math.
           </p>
           <br/>
 
@@ -63,7 +64,7 @@ class Content extends Component {
           </div>
 
           <p>
-            I've been having a lot of fun lately trying to develop pretty & mathematically
+            Lately, I've been enjoying trying to develop pretty & mathematically
             interesting ideas in shader form. You can play with them or make your own
             on <a href="https://www.shadertoy.com">shadertoy</a>.
           </p>
