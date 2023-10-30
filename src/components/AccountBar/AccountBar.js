@@ -82,13 +82,14 @@ class AccountBar extends Component {
 
 
     let logos = [
-      "Twitter",
-      "Instagram",
+      // "Twitter",
+      // "Instagram",
       "Kaggle",
       "Github",
       "StackExchange",
       "LinkedIn",
-      "Shadertoy"
+      // "SoundCloud",
+      // "Shadertoy"
     ]
     let machineLearning = [
     ]
